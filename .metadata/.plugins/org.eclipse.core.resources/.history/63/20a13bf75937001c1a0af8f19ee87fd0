@@ -1,0 +1,22 @@
+public class RobotVacuum implements IMoveable, ICleaner {
+
+    public void move(int xUnits, int yUnits) {
+      // code not shown
+    }
+ 
+    public void clean() {
+      // code not shown
+    }
+  
+    public void print() {
+       System.out.println("I am a robot vacuum!");
+       IMoveable.super.print();
+       ICleaner.super.print();
+    }
+
+    public static void main(String[] args) {
+        RobotVacuum v = new RobotVacuum();
+        v.print();
+    }
+ }
+ 

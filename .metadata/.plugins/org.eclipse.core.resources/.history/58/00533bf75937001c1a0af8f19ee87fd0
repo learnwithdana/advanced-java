@@ -1,0 +1,9 @@
+public interface IMoveable {
+
+    void move(int xUnits, int yUnits);
+ 
+    default void print() {
+       System.out.println("I can move!");
+    }
+ }
+ 
