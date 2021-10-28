@@ -1,18 +1,19 @@
 package com.hca.oop1;
 
 public class Dog extends Animal {
-	private String breed;
+	private String breed;   // default value = null
 	
 	public Dog() {
 		//super();
 		System.out.println("Trace -- in Dog() c'tor");
+		this.breed = "";  // null bad, this better
 	}
 	
 	public Dog(String name) {
 		super(name);
 		System.out.println("Trace -- in Dog(name) c'tor");
 		
-		// this.breed = "unknown";
+		this.breed = "";  // null bad, this better
 	}
 	
 	public Dog(String name, String breed) {

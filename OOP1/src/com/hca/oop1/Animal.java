@@ -22,4 +22,8 @@ public class Animal {
 			this.name = name;
 		}
 	}
+	
+	public void move() {
+		System.out.println("Move, move, move...");
+	}
 }
